@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">keyring-sample-app2</string>
+    <string name="no_shared_credential">没有共享的登录凭据</string>
+    <string name="hint_account">账户 : %s</string>
+    <string name="login_hint">%s 已登录，可一键登录</string>
+    <string name="get_password_failed">获取口令失败</string>
+    <string name="get_password_ok">登录成功</string>
+    <string name="button_login">登录</string>
+    <string name="please_choose_account">请选择一个账户</string>
+</resources>

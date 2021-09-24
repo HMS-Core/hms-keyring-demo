@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">keyring-sample-app2</string>
+    <string name="no_shared_credential">no shared credential</string>
+    <string name="hint_account">Account : %s</string>
+    <string name="login_hint">logined in %s. one-click login</string>
+    <string name="get_password_failed">Get password failed</string>
+    <string name="get_password_ok">Login success</string>
+    <string name="button_login">Login</string>
+    <string name="please_choose_account">Please choose a account</string>
+</resources>

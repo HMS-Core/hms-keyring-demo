@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">keyring-sample-app1</string>
+    <string name="username">用户名</string>
+    <string name="password">口令</string>
+    <string name="show">show</string>
+    <string name="login">登录</string>
+    <string name="reset">删除</string>
+    <string name="invalid_input">用户名和口令不能为空</string>
+    <string name="hint_title">提示</string>
+    <string name="ok">OK</string>
+    <string name="save_credential_ok">保存凭据到 Keyring 成功</string>
+    <string name="save_credential_failed">保存凭据到 Keyring 失败</string>
+    <string name="delete_ok">删除 %s 的凭据成功</string>
+    <string name="delete_failed">删除凭据失败. %s</string>
+    <string name="query_credential_failed">查询凭据失败</string>
+    <string name="no_available_credential">无可用凭据</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">keyring-sample-app1</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="show">show</string>
+    <string name="login">Login</string>
+    <string name="reset">Delete</string>
+    <string name="invalid_input">username or password can not be empty</string>
+    <string name="hint_title">Hint</string>
+    <string name="ok">OK</string>
+    <string name="save_credential_ok">save credential to Keyring success</string>
+    <string name="save_credential_failed">save to keyring failed</string>
+    <string name="delete_ok">delete credential of %s success</string>
+    <string name="delete_failed">delete credential failed. %s</string>
+    <string name="query_credential_failed">query credential failed</string>
+    <string name="no_available_credential">no available credential</string>
+</resources>

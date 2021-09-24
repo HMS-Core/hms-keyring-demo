@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/background_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:text="MyCompany App2"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/list_round_corner"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/credential_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+    </ScrollView>
+
+    <Button android:id="@+id/button_login"
+        app:backgroundTint="@null"
+        style="@style/my_btn_style"
+        android:background="@drawable/btn_round_corner_normal"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/button_login"
+        />
+</LinearLayout>
