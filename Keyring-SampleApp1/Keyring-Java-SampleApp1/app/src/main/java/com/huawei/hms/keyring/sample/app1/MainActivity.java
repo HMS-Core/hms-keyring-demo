@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
         Credential credential = new Credential(username,
                 CredentialType.PASSWORD, userAuth,
                 password.getBytes());
-        credential.setDisplayName("app1");
+        credential.setDisplayName("nickname_" + username);
         credential.setSharedWith(sharedAppList);
         credential.setSyncable(true);
 

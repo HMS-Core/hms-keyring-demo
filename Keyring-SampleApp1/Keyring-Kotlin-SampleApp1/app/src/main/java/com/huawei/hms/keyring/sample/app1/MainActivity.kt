@@ -112,7 +112,7 @@ class MainActivity : AppCompatActivity() {
         val sharedAppList: MutableList<AppIdentity> = ArrayList()
         sharedAppList.add(app2)
         val credential = Credential(username, CredentialType.PASSWORD, userAuth, password.toByteArray())
-        credential.setDisplayName("app1")
+        credential.setDisplayName("nickname_" + username)
         credential.setSharedWith(sharedAppList)
         credential.syncable = true
         val credentialClient = CredentialManager.getCredentialClient(this)
