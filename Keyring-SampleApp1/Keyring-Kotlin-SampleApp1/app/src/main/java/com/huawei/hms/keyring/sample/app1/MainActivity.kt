@@ -151,7 +151,9 @@ class MainActivity : AppCompatActivity() {
         }
         val credentialClient = CredentialManager.getCredentialClient(this)
         val trustedAppList: List<AppIdentity> = ArrayList()
-        credentialClient.findCredential(trustedAppList, object : CredentialCallback<List<Credential>> {
+        trustedAppList.add(AndroidAppIdentity("yourAppName", "yourAppPackageName", "yourAppCodeSigningCertHash"))
+        val sharedCredentialFilter = SharedCredentialFilter.acceptTrustedApps(trustedAppList);
+        credentialClient.findCredential(sharedCredentialFilter, object : CredentialCallback<List<Credential>> {
             override fun onSuccess(credentials: List<Credential>) {
                 if (credentials.isEmpty()) {
                     showMessage(R.string.no_available_credential)
