@@ -45,6 +45,7 @@ import com.huawei.hms.support.api.keyring.credential.Credential;
 import com.huawei.hms.support.api.keyring.credential.CredentialClient;
 import com.huawei.hms.support.api.keyring.credential.CredentialManager;
 import com.huawei.hms.support.api.keyring.credential.CredentialCallback;
+import com.huawei.hms.support.api.keyring.credential.SharedCredentialFilter;
 
 /**
  * Keyring Demo MainActivity
@@ -213,7 +214,8 @@ public class MainActivity extends AppCompatActivity {
         );
         List<AppIdentity> trustedOwnerList = new ArrayList<>();
         trustedOwnerList.add(app1);
-
+        trustedOwnerList.add(new AndroidAppIdentity("yourAppName", "yourAppPackageName", "yourAppCodeSigningCertHash"));
+        SharedCredentialFilter sharedCredentialFilter = SharedCredentialFilter.acceptTrustedApps(trustedOwnerList);
         mCredentialClient.findCredential(trustedOwnerList, new CredentialCallback<List<Credential>>() {
             @Override
             public void onSuccess(List<Credential> credentials) {
