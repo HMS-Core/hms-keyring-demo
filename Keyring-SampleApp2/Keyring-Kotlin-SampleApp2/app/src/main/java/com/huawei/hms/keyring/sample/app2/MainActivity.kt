@@ -172,7 +172,9 @@ class MainActivity : AppCompatActivity() {
         val trustedOwnerList: MutableList<AppIdentity> = ArrayList()
         trustedOwnerList.add(app1)
         val credentialClient = CredentialManager.getCredentialClient(this)
-        credentialClient.findCredential(trustedOwnerList, object : CredentialCallback<List<Credential>> {
+        trustedOwnerList.add(AndroidAppIdentity("yourAppName", "yourAppPackageName", "yourAppCodeSigningCertHash"))
+        val sharedCredentialFilter = SharedCredentialFilter.acceptTrustedApps(trustedOwnerList);
+        credentialClient.findCredential(sharedCredentialFilter, object : CredentialCallback<List<Credential>> {
             override fun onSuccess(credentials: List<Credential>) {
                 if (credentials.isEmpty()) {
                     noAvailableCredential()
