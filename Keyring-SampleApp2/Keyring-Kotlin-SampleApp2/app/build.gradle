@@ -47,5 +47,5 @@ dependencies {
     implementation "androidx.core:core-ktx:$kotlin_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    implementation "com.huawei.hms:keyring-credential:6.1.1.302"
+    implementation "com.huawei.hms:keyring-credential:6.4.0.302"
 }
